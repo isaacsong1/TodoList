@@ -1,4 +1,6 @@
 package com.example.todolist
 
-class TodoAdapter {
+class TodoAdapter (
+    private val todos: MutableList<Todo>
+){
 }
