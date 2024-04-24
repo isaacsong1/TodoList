@@ -11,6 +11,7 @@ class TodoAdapter (
     class TodoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) // TodoViewHolder class inherits RecyclerView with constructor itemView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
+        // Creates a TodoViewHolder and returns it
         return TodoViewHolder (
             LayoutInflater.from(parent.context).inflate(
                 R.layout.item_todo,
@@ -25,6 +26,7 @@ class TodoAdapter (
     }
 
     override fun getItemCount(): Int {
-
+        // Returns the number of items in our list
+        return todos.size
     }
 }
