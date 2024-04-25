@@ -24,7 +24,9 @@ class TodoAdapter (
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
         // Binds data from todos list to the views of our list
         val currTodo = todos[position]
-        holder.itemView.apply {  }
+        holder.itemView.apply {
+            
+        }
     }
 
     override fun getItemCount(): Int {
